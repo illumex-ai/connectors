@@ -18,6 +18,11 @@ class YourDB(DBConnector):
 ### 2: Initialize Connection
 In the __init__ method, establish the connection properties for your database.
 
+```python
+    def __init__(self, connection):
+        super().__init__(connection)
+```
+
 ### 3: Implement Query Function
 The _query method is where you execute your SQL queries and return the result as a pandas DataFrame. It's crucial to handle database-specific quirks and conventions in this method.
 
